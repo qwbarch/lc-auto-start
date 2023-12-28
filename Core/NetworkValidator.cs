@@ -8,7 +8,7 @@ namespace AutoStart.Core
   /// Lethal Company runs on UDP port 7777. Since it's UDP, there's no connection handshake for me to verify a connection.
   /// This class is a workaround where we host our own TCP server to decide whether we need to host or join the game.
   /// </summary>
-  class NetworkValidator
+  public class NetworkValidator
   {
     private readonly Config Config;
 

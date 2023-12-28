@@ -4,7 +4,7 @@ using BepInEx.Configuration;
 
 namespace AutoStart.Core
 {
-  class Config
+  public class Config
   {
     public ConfigEntry<string> ValidatorServerHost;
     public ConfigEntry<int> ValidatorServerPort;
