@@ -1,3 +1,4 @@
+using AutoStart.Core;
 using BepInEx;
 using BepInEx.Logging;
 using HarmonyLib;
@@ -16,6 +17,7 @@ namespace AutoStart
     private void Awake()
     {
       Logger = BepInEx.Logging.Logger.CreateLogSource(PluginId);
+      var config = new Config(this);
       //new Harmony(PluginId).PatchAll(typeof());
     }
   }
