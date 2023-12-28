@@ -6,20 +6,28 @@ namespace AutoStart.Core
 {
   public class Config
   {
+    public ConfigEntry<bool> AutoPullLever;
     public ConfigEntry<string> ValidatorServerHost;
     public ConfigEntry<int> ValidatorServerPort;
 
     public Config(BaseUnityPlugin plugin)
     {
-      const string ServerSection = "Network Validator";
+      AutoPullLever = plugin.Config.Bind(
+        "AutoStart",
+        "AutoPullLever",
+        false,
+        "Automatically pull the lever when hosting games."
+      );
+
+      const string ValidatorSection = "NetworkValidator";
       ValidatorServerHost = plugin.Config.Bind(
-        ServerSection,
+        ValidatorSection,
         "Host",
         "127.0.0.1",
         "Server address to host the network validator on."
       );
       ValidatorServerPort = plugin.Config.Bind(
-        ServerSection,
+        ValidatorSection,
         "Port",
         7777,
         "Server port to host the network validator on."

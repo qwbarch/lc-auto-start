@@ -12,6 +12,12 @@ namespace AutoStart.Core
   {
     private readonly Config Config;
 
+    public bool IsServer
+    {
+      get => _IsServer;
+    }
+    private bool _IsServer = false;
+
     public NetworkValidator(Config config)
     {
       Config = config;
@@ -49,6 +55,7 @@ namespace AutoStart.Core
     {
       var server = new TcpListener(IPAddress.Parse(Config.ValidatorServerHost.Value), Config.ValidatorServerPort.Value);
       server.Start();
+      _IsServer = true;
       while (true)
       {
         try
