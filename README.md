@@ -6,7 +6,8 @@ A **Lethal Company** plugin that automatically starts a LAN game, for developmen
 
 Simply open multiple instances of the game (via the excecutable file, not steam).  
 The first client will automatically host a game, while subsequent clients will join the game hosted on the first client.  
-Do note that you will have to wait 5-10 seconds after launching the first client for the other clients to not get stuck while joining.
+
+Note: You will have to wait 5-10 seconds after launching the first client for the other clients to not get stuck while joining.
 
 ## I'm not a mod/plugin developer. Is this still useful for me?
 
