@@ -1,0 +1,9 @@
+{
+  "name": "AutoStart",
+  "version_number": "1.0.0",
+  "website_url": "https://github.com/qwbarch/lc-auto-start",
+  "description": "Automatically start a LAN game, for development purposes",
+  "dependencies": [
+    "BepInEx-BepInExPack-5.4.2100"
+  ]
+}
