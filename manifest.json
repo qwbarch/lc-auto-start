@@ -1,6 +1,6 @@
 {
   "name": "AutoStart",
-  "version_number": "1.0.0",
+  "version_number": "1.0.1",
   "website_url": "https://github.com/qwbarch/lc-auto-start",
   "description": "Automatically start a LAN game, for development purposes",
   "dependencies": [
